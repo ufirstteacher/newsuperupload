@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruction App Uploading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .accordion {
+            background-color: #f7f7f7;
+            color: #444;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 1.5em;
+            transition: background-color 0.3s ease;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .accordion:hover {
+            background-color: #e2e2e2;
+        }
+        .accordion.active {
+            background-color: #d9d9d9;
+        }
+        .accordion:after {
+            content: '\002B'; /* Plus sign */
+            font-size: 1.5em;
+            color: #007bff;
+            float: right;
+            margin-left: 10px;
+        }
+        .accordion.active:after {
+            content: "\2212"; /* Minus sign */
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+            border-left: 2px solid #007bff;
+            border-right: 2px solid #007bff;
+            border-bottom: 2px solid #007bff;
+            border-radius: 0 0 5px 5px;
+            margin-bottom: 10px;
+            text-align: center; /* Центрування тексту */
+        }
+        .panel img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .panel img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .important-text {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instruction App Uploading</h1>
+
+        <button class="accordion">Create App</button>
+        <div class="panel">
+            <p>The name of the application should be taken in the info.txt file in the "App title field:"</p>
+            <img src="screenshots/step_create_app.png" alt="Create App">
+            <p>and click "Create App"</p>
+        </div>
+
+        <button class="accordion">Set privacy policy</button>
+        <div class="panel">
+            <p>the privacy policy should be taken from the info.txt file</p>
+            <img src="screenshots/step_privacy_policy.png" alt="Set privacy policy">
+        </div>
+
+        <button class="accordion">App access</button>
+        <div class="panel">
+            <p>All functionality in my app is available without any access restrictions</p>
+            <img src="screenshots/step_app_access.png" alt="App access">
+        </div>
+
+        <button class="accordion">Ads</button>
+        <div class="panel">
+            <p>This item is best checked with Anna, but we always choose NO</p>
+            <img src="screenshots/step_ads.png" alt="Ads">
+        </div>
+
+        <button class="accordion">Content rating</button>
+        <div class="panel">
+            <p>Email should always be requested from Anna. IMPORTANT! NEVER ENTER YOUR</p>
+            <img src="screenshots/step_content_rating.png" alt="Content rating">
+            <p class="important-text">Violence, Blood, or Gory Images: NO</p>
+            <p class="important-text">Fear: NO</p>
+            <p class="important-text">Sexuality, Suggestiveness, or Dating Games: NO</p>
+            <p class="important-text">Gambling Themes, Simulated Gambling, or Real Gambling: NO</p>
+            <p class="important-text">Language: NO</p>
+            <p class="important-text">Controlled Substance: NO</p>
+            <p class="important-text">Crude Humor: NO</p>
+            <p class="important-text">Digital Purchases, Cash Convertible Rewards, or NFTs: NO</p>
+            <p class="important-text">Miscellaneous: NO</p>
+        </div>
+
+        <button class="accordion">Target audience</button>
+        <div class="panel">
+            <p>Always choose “18 and over”</p>
+            <img src="screenshots/step_target_audience.png" alt="Target audience">
+        </div>
+
+        <button class="accordion">News apps</button>
+        <div class="panel">
+            <p>Select NO</p>
+            <img src="screenshots/step_news_apps.png" alt="News apps">
+        </div>
+
+        <button class="accordion">Data safety</button>
+        <div class="panel">
+            <p>Select NO</p>
+            <img src="screenshots/step_data_safety.png" alt="Data safety">
+        </div>
+
+        <button class="accordion">Government apps</button>
+        <div class="panel">
+            <p>Government apps NO</p>
+            <img src="screenshots/step_government_apps.png" alt="Government apps">
+        </div>
+
+        <button class="accordion">Financial features</button>
+        <div class="panel">
+            <p>Financial features.</p>
+            <img src="screenshots/step_financial_features.png" alt="Financial features">
+        </div>
+
+        <button class="accordion">Health</button>
+        <div class="panel">
+            <p>Select</p>
+            <img src="screenshots/step_health.png" alt="Health">
+        </div>
+
+        <button class="accordion">Select an app category and provide contact details</button>
+        <div class="panel">
+            <p>Always choose Game. Genre is in info.txt file. Tags are not used. Only add the Email that Anna gave you to contact us.</p>
+            <img src="screenshots/step_category_contact.png" alt="Select an app category and provide contact details">
+        </div>
+
+        <button class="accordion">Set up your store listing</button>
+        <div class="panel">
+            <p>Fill in all the information that is in the info.txt file.
+Also unload the design that came with the application. Screenshot's, icon, banner. Screenshots are mobile only, not required for tablets</p>
+            <img src="screenshots/step_store_listing.png" alt="Set up your store listing">
+        </div>
+		
+		        <button class="accordion">App Content</button>
+        <div class="panel">
+            <p>Select NO</p>
+            <img src="screenshots/step_appcontent.png" alt="Health">
+        </div>
+
+        <p style="text-align: center;">After that, select all countries.
+Create a new release. IMPORTANT: ONLY PRODUCTION and upload the aab file that came with the application.</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
